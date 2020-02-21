@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fecha</title>
+</head>
+<body>
+    <script>
+       /*  var fecha = new Date();
+        //alert("La fecha actual es " + fecha);
+
+        var annoCompleto = fecha.getFullYear();
+
+        var annoNormal = fecha.getYear();
+
+        var mesNumero = fecha.getMonth();
+
+        var diasMesNumero = fecha.getDate();
+
+        var diaSemanaNumero = fecha.getDay();
+
+        var hora = fecha.getHours();
+
+        var minuto= fecha.getMinutes () ;
+
+        var segundo= fecha.getSeconds () ;
+
+        var milisegundos= fecha.getMilliseconds () ;
+
+        var miliMarca= fecha.getTime () ;
+
+        document.write("La fecha completa es: " + fecha + "<br>");
+        
+        document.write("El año completo es: " + annoCompleto + "<br>");
+
+        document.write("El año normal es: " + annoNormal + "<br>");
+
+        document.write("El numero de mes es: " + mesNumero + "<br>");
+
+        document.write("El dia del mes es: " + diasMesNumero + "<br>");
+
+        document.write("El dia de la semana es: " + diaSemanaNumero + "<br>");
+
+        document.write("son las : " + hora + "<br>");
+
+        document.write("estamos en el minuto: " + minuto + "<br>");
+
+        document.write("y segundo : " + segundo + "<br>");
+
+        document.write("Los milisegundos : " + milisegundos + "<br>");
+
+        document.write("Desde el 1 de enero de 1970 han transcurrido : " + miliMarca + "<br>"); */
+
+       
+       
+        /*
+        var meses = new Array ("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+
+        var fecha = new Date();
+        var mes = fecha.getMonth();
+
+        alert ("El mes actual es: " + meses[mes]);
+        */
+
+
+
+        /*
+        var semana = new Array("Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado");
+
+        var fecha = new Date();
+        var semanas = fecha.getDay();
+
+        alert("El dia de la semana es: " + semana[semanas]);
+        */
+       
+
+        /*
+        var fecha_1 = new Date();
+        
+        var respuesta = prompt("¿Quién descubrió américa?" , "");
+       
+        var fecha_2 = new Date();
+        
+        var tiempo = fecha_2 - fecha_1;
+
+        document.write("Ha tardado " + tiempo + "milisegundos.");
+        */
+
+       
+       /*
+        var fecha_1 = new Date();
+        var nombre ;
+        nombre = window.prompt("¿Quién descubrió américa?" , "");
+       
+        var fecha_2 = new Date();
+        var tiempo = fecha_2 - fecha_1;
+
+
+
+        if(tiempo > 999){// si hay más de 999 milisegundos es que hay al menos un segundo
+            var segundos = parseInt(tiempo/1000);
+            tiempo -= (segundos*1000); // tiempo = tiempo - (segundos*1000);
+        }  else {
+            var segundos = 0;
+        }
+
+        if(segundos > 59){// si hay más  de un minuto.
+            var minutos = parseInt(segundos/60);
+            segundos -= (minutos*60);
+            
+        }else {
+            minutos = 0;
+        }*/
+    
+       /* document.write("Tu respuesta ha sido <b>" + nombre +  "</b> , y ha tardado " + minutos + "minutos, " + segundos+ " segundos, " + tiempo + " milisegundos. ")*/
+        /*
+        if(minutos > 59){// si hay más  de 59 minutos.
+            var hora = parseInt(minutos/60);
+            minutos -= (hora*60);
+            
+        }else {
+            hora = 0;
+        }
+
+        document.write("Tu respuesta ha sido " + nombre + " y ha tardado " + hora + " horas, " + minutos + " minutos, " + segundos + " segundos y " + tiempo + " milisegundos.");
+        //document.write("Ha tardado " + tiempo + "milisegundos.");
+        */
+
+        var fecha = new Date();
+        document.write(fecha + "<br>");
+
+        var mes = fecha.getMonth();
+        fecha.setMonth (mes+3);
+
+        document.write(fecha);        
+
+
+    </script>
+</body>
+</html>

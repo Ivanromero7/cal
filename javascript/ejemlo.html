@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ejercicio 7 - Factorial de un número entero</title>
+
+<script type="text/javascript">
+    /*var mensaje1 = "Hola";
+    var mensaje2 = " Mundo";
+    var mensaje = mensaje1  +  mensaje2; // mensaje = "Hola Mundo"
+
+    document.writeln( "te voy a saludar con " + mensaje);*/
+
+   
+   /* concatenar
+    var mensaje1 = "Hola";
+    var mensaje2 = mensaje1.concat(" Mundo"); // mensaje2 = "Hola Mundo"
+    document.writeln(mensaje2);*/
+
+    
+    /*Mayúscula
+    var mensaje1 = "Hola";
+    var mensaje2 = mensaje1.toUpperCase(); // mensaje2 = "HOLA"
+    document.writeln("La funcion toUpperCase me pone el texto en mayúscula " + mensaje2);
+    */
+
+
+    /*minúscula
+    var mensaje1 = "HolA";
+    var mensaje2 = mensaje1.toLowerCase(); // mensaje2 = "hola"
+    document.writeln("La funcion toLowerCase me pone el texto en minúscula " + mensaje2);
+    */
+
+
+    /*
+    var mensaje = "Hola";
+    var letra = mensaje.charAt(0); // letra = H
+    letra = mensaje.charAt(3);     // letra = l
+
+    document.writeln(letra);*/
+
+
+    /* indesOf POSICION DE LA CADENA DE TEXTO
+    var mensaje = "Hola ivan romero";
+    var posicion = mensaje.indexOf('a'); // posicion = 3
+    posicion = mensaje.indexOf('o');     // posicion = -1
+
+    document.writeln(posicion);*/
+    
+
+    /*
+    var mensaje = "Hola Mundo";
+    var porcion = mensaje.substring(2); // porcion = "la Mundo"
+    porcion = mensaje.substring(5);     // porcion = "Mundo"
+    porcion = mensaje.substring(7);     // porcion = "ndo"
+
+    document.writeln(porcion);*/
+
+    
+    /* split
+    var mensaje = "Hola Mundo, soy una cadena de texto!";
+    var palabras = mensaje.split(" , ");
+    // palabras = ["Hola", "Mundo,", "soy", "una", "cadena", "de", "texto!"];
+
+    document.writeln(palabras);
+
+    */
+   
+
+
+   /* ejercicio juan 
+
+   
+    for(i=1; i < 100; i++){
+
+        if(i % 3 == 0 && i % 5 == 0){
+            document.writeln("FizzBuzz") ;
+        }else if(i % 3 == 0){
+            document.writeln("Fizz")
+                    
+        }else if (i % 5 == 0){
+
+            document.writeln("Buzz")
+
+        }else{
+            
+            document.writeln(i);
+        
+        }
+    }     
+
+    */
+
+
+    //length, calcula el número de elementos de un array
+
+    /*
+    var vocales = ["a", "e", "i", "o", "u"];
+    var numeroVocales = vocales.length; // numeroVocales = 5
+
+    document.writeln(numeroVocales);
+    */
+
+
+
+
+    //concat(), se emplea para concatenar los elementos de varios arrays
+    /*
+    var array1 = [1, 2, 3];
+    array2 = array1.concat(4, 5, 6);   // array2 = [1, 2, 3, 4, 5, 6]
+    array3 = array1.concat([4, 5, 6, 7, 8, 9]); // array3 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+    document.writeln(array3);
+    */
+
+
+
+    //join(separador)
+    /*
+    var array = ["hola", "mundo"];
+    var mensaje = array.join(""); // mensaje = "holamundo"
+    mensaje = array.join(" ");    // mensaje = "hola mundo"
+
+    document.writeln(mensaje);
+    */
+
+
+
+
+
+
+
+    //pop(), elimina el último elemento del array y lo devuelve. El array original se modifica y su longitud disminuye en 1 elemento.
+    /*
+    var array = [1, 2, 3, 4];
+    var ultimo = array.pop();
+    // ahora array = [1, 2], ultimo = 3
+    document.writeln(ultimo);
+    */
+
+
+
+    //push(), añade un elemento al final del array. El array original se modifica y aumenta su longitud en 1 elemento. (También es posible añadir más de un elemento a la vez)
+    /*
+    var array = [1, 2, 3];
+    array.push(4);
+    // ahora array = [1, 2, 3, 4]
+
+    document.writeln(array);
+    */
+
+
+
+    //NaN, (del inglés, "Not a Number") JavaScript emplea el valor NaN para indicar un valor numérico no definido (por ejemplo, la división 0/0).
+    /*
+    var numero1 = 10;
+    var numero2 = 5;
+    alert(numero1/numero2); // se muestra el valor NaN
+    */
+
+
+ 
+
+    /*
+    var numero1 = 3;
+    var numero2 = 5;
+
+    suma_y_muestra(numero1, numero2);
+
+    function suma_y_muestra(primerNumero, segundoNumero) { 
+    var resultado = primerNumero + segundoNumero;
+    alert("El resultado es " + resultado);
+}
+*/
+
+// ejercicio de palíndromo
+
+function texto()
+{
+	var palabra=prompt("Escribe un palíndromo").toLowerCase();
+ 
+	// eliminamos los espacios en blanco
+	palabra=palabra.replace(/ /g, "");
+ 
+	for (var i=0;i<palabra.length;i++){
+		if(palabra[i]!=palabra[palabra.length-i-1]){
+			return false;
+		}
+	}
+	return true;
+}
+ 
+if(texto())
+{
+	alert("Esto es palíndromo");
+}else{
+	alert("Esto no es palíndromo")
+}
+
+</script>
+</head>
+
+<body>
+</body>
+</html>
