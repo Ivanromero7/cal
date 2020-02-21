@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+
+	<head>
+		<meta charset="utf-8"/>
+		<title> tabla </title>
+		<link href="css/default.css" rel="stylesheet" type="text/css"/>
+		
+		<style>
+			table, th, td {
+				border: 5px solid black;
+				border-collapse: collapse;
+				text-align:center;
+			}
+			th, td {
+				padding: 5px;
+				text-align: center;    
+			}
+			td{
+				background-color:#CAD1D0;
+			}
+		</style>
+	</head>
+	
+	
+	<body>
+	
+		<h1 style="text-align:center"> Tablas </h1>
+		 
+		<br>
+		
+		<!-- este div pertenece a la tabla-->
+		<div align="center">
+		
+		<table style="width:50%">
+			<tr style="background-color:#fdddca">
+				<th colspan="3">titulo</th>
+				<th  colspan="3">titulo</th>
+				
+			</tr>
+		
+			
+			<tr>
+				<td rowspan="3" width="100">a</td>
+				<td rowspan="3" colspan="4" style="background-color:#FFFF00"><img  src="imagenes/alax.png" alt="alax"  width="100" height="100"/></td>
+				<td width="100">a</td>
+			</tr>
+			<tr>
+				<td width="100">a</td>
+				
+			</tr>
+			<tr>
+				
+				<td width="100">a</td>
+				
+			</tr>
+			<tr>
+				<td style="background-color:#FFFF00 "><img  src="imagenes/alax.png" alt="alax"  width="50" height="50"/></td>
+				<td width="100">d</td>
+				<td colspan="3" width="100">d</td>
+				
+				<td width="100">a</td>
+				
+			</tr>
+			<tr>
+				<td colspan="2">e</td>
+				<td colspan="2" style="background-color:#FFFF00" width="100"><img  src="imagenes/wordcloud.png" alt="alax"  width="50" height="50"/></td>
+				<td width="100">e</td>
+				<td style="background-color:#FFFF00" width="100"><img  src="imagenes/alax.png" alt="alax"  width="50" height="50"/></td>
+				
+			</tr>
+			
+		</table>
+		
+		</div>
+		<!-- aquí acaba el div de la tabla-->
+		
+		
+	</body>
+</html>
